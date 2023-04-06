@@ -4,169 +4,311 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eCommerce</title>
+    <title>Oficial</title>
+    
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+
 </head>
 <body>
 
-<!-- Linha 1: Cabeçalho, pesquisa principal, dados da conta, carrinho -->
-    <div class="conteiner_principal">
-        <div class="cabecalho">
+    <a href=""></a>
+    <header>
+       <div class="conteiner">
             <div class="logo">
-                <img src="./img/Logo.png" alt="Logo">
+                <img src="./imgs/Logo.png" alt="">
             </div>
-            <div class="pesquisa">
-                <form>
-                    <label for="search-field">Pesquisar:</label>
-                    <input type="search" id="search-field" name="q">
-                    <button type="submit">Buscar</button>
-                  </form>
+            <div class="search">
+                <div class="pesquisa">
+                    <div class="bemvindo">
+                        <p>Welcome Guest!</p>
+                    </div>
+                    <div class="separapesquisa">
+                        <input type="text" placeholder="search for a product, category, Sallers or Brand">
+                        <button class="btn_erick"><img src="./imgs/pesquisa.png" alt=""> Search</button>
+                    </div>
+                    
+                </div>
             </div>
-            <div class="conta">
-                <ul>
-                    <li>
-                        Resgistrar
-                    </li>
-                    <li>
-                        Minha conta
-                    </li>
-                    <li>
-                        Sair
-                    </li>
-                </ul>
+            <div class="navlink">
+                <div class="links">
+                    <ul>
+                        <li class="lis"><a href="#">Sign in</a></li>
+                        <li class="lis"><a href="#">Register</a></li>
+                        <li class="lis"><a href="#">My account </a></li>
+                        <li class="lis"><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                <div class="carrinho">
+                    <img src="./imgs/Carrnho.png" alt="">
+                </div>
             </div>
-        </div>
-<!-- Linha 2: Filtros da tela, imagem carrousel -->
-        <div class="header">
-            <div class="filtro">
-                <form>
-                    <label for="type">Tipo:</label>
-                    <input  type="text" id="type" name="type">
-                      
-                    <label for="category">Categoria:</label>
-                    <input  type="text" id="category" name="category">
-                      
-                    <label for="brand">Marca:</label>
-                    <input  type="text" id="brand" name="brand">
-                      
-                    <label for="min-price">Valor mínimo:</label>
-                    <input  type="number" id="min-price" name="min-price">
-                      
-                    <label for="max-price">Valor máximo:</label>
-                    <input  type="number" id="max-price" name="max-price">
-                      
-                    <button type="submit">Buscar</button>
-                </form>
-            </div>
-            <div class="fotos">
-                <div class="cards">
-                    <div class="card">
-                        
-                        <img src="./img/camisa.png" alt="teste">
-                        <div class="dados_prod">
-                            <p>Camisa preta simples</p>
-                            <p>R$200,00</p>
-                        </div>
+        </div> 
+    </header>
+    <section>
+        <div class="container_section">
+            <div class="filtros">
+                <div class="componentes_filtro">
+                    <div class="descri">
+                        <h3>Quick find - Choose Product</h3>
+                        <p>Find the right product at the right price</p>
                     </div>
-                    <div class="card">
-                        
-                        <img src="./img/camisa.png" alt="teste">
-                        <div class="dados_prod">
-                            <p>Camisa preta simples</p>
-                            <p>R$200,00</p>
-                        </div>
+                    <div class="inputs">
+                        <input type="text" placeholder="Type"><select name="Tipo"></select>
+                        <input type="text" placeholder="Brand"><select name="Tipo"></select>
+                        <input type="text" placeholder="Category"><select name="Tipo"></select>
                     </div>
-                    <div class="card">
-                        
-                        <img src="./img/camisa.png" alt="teste">
-                        <div class="dados_prod">
-                            <p>Camisa preta simples</p>
-                            <p>R$200,00</p>
-                        </div>
+                    <div class="R$ 1.099,99
+10x R$ 109,99es">
+                        <p>$</p>
+                        <input type="number" placeholder="From">
+                        <p>$</p>
+                        <input type="number" placeholder="To">
                     </div>
-                    <div class="card">
-                        
-                        <img src="./img/camisa.png" alt="teste">
-                        <div class="dados_prod">
-                            <p>Camisa preta simples</p>
-                            <p>R$200,00</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        
-                        <img src="./img/camisa.png" alt="teste">
-                        <div class="dados_prod">
-                            <p>Camisa preta simples</p>
-                            <p>R$200,00</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        
-                        <img src="./img/camisa.png" alt="teste">
-                        <div class="dados_prod">
-                            <p>Camisa preta simples</p>
-                            <p>R$200,00</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        
-                        <img src="./img/camisa.png" alt="teste">
-                        <div class="dados_prod">
-                            <p>Camisa preta simples</p>
-                            <p>R$200,00</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        
-                        <img src="./img/camisa.png" alt="teste">
-                        <div class="dados_prod">
-                            <p>Camisa preta simples</p>
-                            <p>R$200,00</p>
-                        </div>
+                    <div class="butfiltro">
+                        <button class="btn_erick"><img src="./imgs/pesquisa.png" alt=""> Search</button>
                     </div>
                 </div>
             </div>
-        </div>
-<!-- Linha 3 a 5 : produtos em cartaz, revil de itens a direita -->
-        <!-- <div class="section">.
-            <div class="produto">
-
-            </div>
-            <div class="reviw">
-
-            </div>
-        </div> -->
-<!-- LInha 6: Metodos de pagamento, Quick links, Redes sociais, contatos -->
-        <div class="footer">
-            <div class="pagamentos">
-                <h1>Formas de pagamento</h1>
-                <img src="./img/formas-de-pagamento.png" alt="">
-            </div>
-            <div class="links">
-
-                <!-- Para gerar varios LIs ul>li*quantidade.classe$  -->
-                <h1>Links Rapidos</h1>
+            <div class="carrosel">
                 <ul>
-                    <li><a href="#" class="linksli1">Ajuda</a></li>
-                    <li><a href="#" class="linksli2">sobre</a></li>
-                    <li><a href="#" class="linksli3">politica</a></li>
-                    <li><a href="#" class="linksli4">trabalhe conosco</a></li>
+                    <li><img src="./ImgsTenis/Nike100px.jpg" alt=""></li>
+                    <li><img src="./ImgsTenis/Nike100px2.png" alt=""></li>
+                    <li><img src="./ImgsTenis/Nike100px3.jpg" alt=""></li>
                 </ul>
             </div>
-            <div class="redes">
-                <h1>Redes sociais</h1>
-                <ul>
-                    <li><a href="#"><img src="./img/png.png"  class="redes1"></a></li>
-                </ul>
+            
+            
+        </div>
+        <div class="produtos">
+            <div class="cards">
+                <div class="card">
+                    <div class="conteudocards">
+                        <div class="cardimg">
+                            <img src="./ImgsTenis/TÊNIS JORDAN DOGGFATHER.png" alt="">
+                        </div>
+                        <div class="textcard">
+                            <h3>TÊNIS JORDAN DOGGFATHER</h3>
+                            <h4><img src="./Icons/Estrelinha4.png" alt=""></h4>
+                            <h3>R$ 1.099,99
+10x R$ 109,99</h3>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="conteudocards">
+                        <div class="cardimg">
+                            <img src="./ImgsTenis/TÊNIS NIKE AIR MAX 90 365 MASCULINO.png" alt="">
+                        </div>
+                        <div class="textcard">
+                            <h3>TÊNIS NIKE AIR MAX 90 365 MASCULINO</h3>
+                            <h4><img src="./Icons/Estrelinha5.png" alt=""></h4>
+                            <h3>R$ 999,99
+                                10x R$ 99,99</h3>                        
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="conteudocards">
+                        <div class="cardimg">
+                            <img src="./ImgsTenis/TÊNIS AIR JORDAN 1 ELEVATE LOW FEMININO.png" alt="">
+                        </div>
+                        <div class="textcard">
+                            <h3>TÊNIS AIR JORDAN 1 ELEVATE LOW FEMININO</h3>
+                            <h4><img src="./Icons/Estrelinha4.png" alt=""></h4>
+                            <h3>R$ 1.099,99
+10x R$ 109,99</h3>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="conteudocards">
+                        <div class="cardimg">
+                            <img src="./ImgsTenis/TÊNIS FILA CORDA MASCULINO.png" alt="">
+                        </div>
+                        <div class="textcard">
+                            <h3>TÊNIS FILA CORDA MASCULINO</h3>
+                            <h4><img src="./Icons/Estrelinha5.png" alt=""></h4>
+                            <h3>R$ 1.099,99
+10x R$ 109,99</h3>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="conteudocards">
+                        <div class="cardimg">
+                            <img src="./ImgsTenis/TÊNIS NIKE AIR MAX 90 FEMININO.png" alt="">
+                        </div>
+                        <div class="textcard">
+                            <h3>TÊNIS NIKE AIR MAX 90 FEMININO</h3>
+                            <h4><img src="./Icons/Estrelinha4.png" alt=""></h4>
+                            <h3>R$ 1.099,99
+10x R$ 109,99</h3>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="conteudocards">
+                        <div class="cardimg">
+                            <img src="./ImgsTenis/TÊNIS NIKE AIR MAX PLUS FEMINIO.png" alt="">
+                        </div>
+                        <div class="textcard">
+                            <h3>TÊNIS NIKE AIR MAX PLUS FEMINIO</h3>
+                            <h4><img src="./Icons/Estrelinha5.png" alt=""></h4>
+                            <h3>R$ 1.099,99
+10x R$ 109,99</h3>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="conteudocards">
+                        <div class="cardimg">
+                            <img src="./ImgsTenis/TÊNIS NIKE AIR MAX PLUS MASCULINO.png" alt="">
+                        </div>
+                        <div class="textcard">
+                            <h3>TÊNIS NIKE AIR MAX PLUS MASCULINO</h3>
+                            <h4><img src="./Icons/Estrelinha4.png" alt=""></h4>
+                            <h3>R$ 1.099,99
+10x R$ 109,99</h3>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="conteudocards">
+                        <div class="cardimg">
+                            <img src="./ImgsTenis/TÊNIS PUMA MB.02 IRIDESCENT MASCULINO.png" alt="">
+                        </div>
+                        <div class="textcard">
+                            <h3>TÊNIS PUMA MB.02 IRIDESCENT MASCULINO</h3>
+                            <h4><img src="./Icons/Estrelinha4.png" alt=""></h4>
+                            <h3>R$ 1.099,99
+10x R$ 109,99</h3>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="conteudocards">
+                        <div class="cardimg">
+                            <img src="./ImgsTenis/TÊNIS VANS OLD SKOOL.png" alt="">
+                        </div>
+                        <div class="textcard">
+                            <h3>TÊNIS VANS OLD SKOOL</h3>
+                            <h4><img src="./Icons/Estrelinha5.png" alt=""></h4>
+                            <h3>R$ 1.099,99
+10x R$ 109,99</h3>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="contatos">
-                <h1>Contatos</h1>
-                <h3>1331368@sga.pucminas.br</h3>
-                <h3>+55 31 9 9999-9999</h3>
+            <div class="melhoresprods">
+                <div class="prods">
+                    <div class="prodsimg">
+                        <img src="./ImgsTenis/TÊNIS NIKE AIR MAX 90 365 MASCULINO.png" alt="">
+                    </div>
+                    <div class="prodstext">
+                        
+                        <p>TÊNIS NIKE AIR</p>
+
+                        <!-- <h3>TÊNIS NIKE AIR MAX 90 365 MASCULINO</h3> -->
+                        <h4><img src="./Icons/premium.png" alt=""></h4>
+                        <h4>R$ 1.099,99
+10x R$ 109,99</h4>
+                    </div>
+                </div>
+                <div class="prods">
+                    <div class="prodsimg">
+                        <img src="./ImgsTenis/TÊNIS JORDAN DOGGFATHER.png" alt="">
+                    </div>
+                    <div class="prodstext">
+                        
+                        <p>TÊNIS JORDAN DOGGFATHER</p>
+
+                        <!-- <h3>TÊNIS JORDAN DOGGFATHER</h3> -->
+                        <h4><img src="./Icons/premium.png" alt=""></h4>
+                        <h4>R$ 1.099,99
+10x R$ 109,99</h4>
+                    </div>
+                </div>
+                <div class="prods">
+                    <div class="prodsimg">
+                        <img src="./ImgsTenis/TÊNIS AIR JORDAN 1 ELEVATE LOW FEMININO.png" alt="">
+                    </div>
+                    <div class="prodstext">
+                        
+                        <p>TÊNIS AIR JORDAN</p>
+
+                        <!-- <h3>TÊNIS AIR JORDAN 1 ELEVATE LOW FEMININO</h3> -->
+                        <h4><img src="./Icons/premium.png" alt=""></h4>
+                        <h4>R$ 1.099,99
+10x R$ 109,99</h4>
+                    </div>
+                </div>
+                <div class="prods">
+                    <div class="prodsimg">
+                        <img src="./ImgsTenis/TÊNIS NIKE AIR MAX PLUS FEMINIO.png" alt="">
+                    </div>
+                    <div class="prodstext">
+                        
+                        <p>TÊNIS NIKE AIR</p>
+
+                        <!-- <h3>TÊNIS NIKE AIR MAX PLUS FEMINIO</h3> -->
+                        <h4><img src="./Icons/premium.png" alt=""></h4>
+                        <h4>R$ 1.099,99
+10x R$ 109,99</h4>
+                    </div>
+                </div>
+                <div class="prods">
+                    <div class="prodsimg">
+                        <img src="./ImgsTenis/TÊNIS NIKE AIR MAX PLUS MASCULINO.png" alt="">
+                    </div>
+                    <div class="prodstext">
+                        
+                        <p>TÊNIS NIKE AIR</p>
+
+                        <!-- <h3>TÊNIS NIKE AIR MAX PLUS MASCULINO</h3> -->
+                        <h4><img src="./Icons/premium.png" alt=""></h4>
+                        <h4>R$ 1.099,99
+10x R$ 109,99</h4>
+                    </div>
+                </div>
+                <div class="btnprods">
+                    <button class="btnprod">
+                        Search
+                    </button>
+                </div>
+            </div>
+            <div class="news">
+                <div class="texnews">
+                    <h1>NewsLatter</h1>
+                    <p>Signup for newlsletter!</p>
+                </div>
+                <div class="inputbotomnew">
+                    <input type="text">
+                    <button>Join Now</button>
+                </div>
             </div>
         </div>
-
-    </div>
+    </section>
+    <footer>
+        <div class="container_footer">
+            <div class="footer1 footers"><img src="./Icons/Pagamentos.jpeg" alt=""> </div>
+            <div class="footer2 footers"><img src="./Icons/links.jpeg" alt=""> </div>
+            <div class="footer3 footers"><img src="./Icons/social.jpeg" alt=""> </div>
+            <div class="footer4 footers"><img src="./Icons/contact.jpeg" alt=""> </div>
+        </div>
+    </footer>
+    
 
 
 </body>
